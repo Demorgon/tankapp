@@ -1,0 +1,817 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Ubuntu";
+    overflow-x: hidden;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper {
+    max-width: 1500px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.content-container {
+    padding-left: 110px;
+    overflow: visible;
+}
+
+.header {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-family: myriad-pro, sans-serif;
+    color: #5d6471;
+    line-height: 3.325em;
+    text-align: center;
+}
+
+.max-height {
+    height: 100%;
+    max-height: 100%;
+}
+
+/*FULLSCREEN-MENU*/
+.fullscreen-menu__nav {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fullscreen-menu__close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.fullscreen-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #65a9d8;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #ffffff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+.fullscreen-menu--opened {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+.fullscreen-menu--closed {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.menu-line {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.menu-button {
+    width: 22px;
+    height: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    cursor: pointer;
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    z-index: 999;
+    display: none;
+}
+
+.fullscreen-menu__item {
+    color: #ffffff;
+    font-family: "Ubuntu", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 20px;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+/********/
+
+/*TOP MENU*/
+
+.logo__text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.3125rem;
+    font-weight: 700;
+    color: #333333;
+    line-height: 2em;
+}
+
+.logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+.logo__img {
+    color: #ffce54;
+    margin-right: 5px;
+}
+
+.top-menu__logo {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.top-menu__nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.top-menu {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.nav__item {
+    margin: 0 20px;
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #868b94;
+    line-height: 3em;
+}
+
+.logo__span {
+    color: #65a9d9;
+}
+
+.section--top-menu {
+    background-color: #ffffff;
+}
+
+/*************************/
+
+/*MAIN*/
+.section--main {
+    background-color: #65a9d8;
+}
+
+.about__header {
+    font-size: 3.25rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1.4em;
+    text-align: left;
+}
+
+.about__text {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 1.5rem;
+    line-height: 2em;
+}
+
+.sign-up {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    line-height: 8.3125em;
+    color: #ffffff;
+}
+
+.sign-up__bg {
+    background-color: #ffce54;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.input {
+    width: 100%;
+    max-width: 860px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.sign-up__input {
+    border: none;
+    border-radius: 5px;
+    padding: 20px 25px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin-right: 35px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.button {
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button--sign-up {
+    background-color: #77c344;
+    padding: 20px 25px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    border-radius: 5px;
+    color: #ffffff;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+
+.button--sign-up:hover {
+    background-color: #559a26;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+
+.about__description {
+    padding: 235px 25px 250px 50px;
+    width: 50%;
+    position: relative;
+}
+
+.about__description:before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/icons/cloud.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 140px;
+    left: 10px;
+}
+
+.about__description:after {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 50px;
+    background-image: url(../img/icons/cloud.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 90px;
+    left: 40px;
+}
+
+.about__img {
+    width: 50%;
+    max-height: 870px;
+    padding-top: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    position: relative;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+}
+
+.about__img:before {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 50px;
+    background-image: url(../img/icons/cloud.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 225px;
+    right: 100px;
+}
+
+.about__img:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/icons/cloud.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 110px;
+    right: -10px;
+    -webkit-filter: opacity(0.25);
+    filter: opacity(0.25);
+}
+
+.about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+/**************/
+
+/*CLIENTS*/
+
+.section--clients {
+    background-color: #f8f8f8;
+}
+
+.content-container--clients {
+    padding-right: 110px;
+}
+
+.clients {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 55px 60px;
+}
+
+.client {
+    width: 200px;
+    height: 45px;
+    -webkit-filter: opacity(0.47);
+    filter: opacity(0.47);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 10px 25px;
+    position: relative;
+}
+
+/***********/
+
+/*BENEFITS*/
+
+.benefits {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.benefits__description {
+    width: 50%;
+    padding: 50px 20px;
+}
+
+.benefit__header {
+    font-family: Ubuntu, sans-serif;
+    font-size: 1.375rem;
+}
+
+.benefit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 110px;
+    padding: 20px 0;
+}
+
+.benefit__name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.benefit__icon {
+    margin-right: 20px;
+}
+
+.benefit__text {
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    color: #9499a2;
+    padding: 0 15px;
+}
+
+.card-container {
+    width: 50%;
+    min-height: 630px;
+    height: 630px;
+    max-height: 630px;
+    background-image: url(../img/macbook.png);
+    background-repeat: no-repeat;
+    background-position: 0px center;
+    position: absolute;
+    overflow: hidden;
+    top: 100px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.card {
+    position: absolute;
+    bottom: 76px;
+    left: 128px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+
+
+/***********/
+
+/*REVIEWS*/
+
+.section--reviews {
+    background-color: #f6f6f7;
+    background-image: url(../img/review__bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.content-container--reviews {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.review__header {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.75rem;
+}
+
+.review__icon {
+    width: 65px;
+    margin-right: 20px;
+}
+
+.review__name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.review__text {
+    width: 50%;
+    font-size: 1rem;
+    line-height: 2em;
+    color: #9499a2;
+}
+
+
+
+.slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    padding: 70px 0;
+}
+
+.review {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-pagination-bullet {
+    color: #4b5062;
+    width: 28px;
+    height: 28px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: transparent;
+    margin: 10px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #64a4d7;
+    color: #ffffff;
+}
+
+/**********/
+
+/*EMAIL*/
+
+.content-container--email {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 110px;
+    text-align: center;
+}
+
+.email__text {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.3em;
+    margin-bottom: 60px;
+    color: #5a626e;
+}
+
+.sign-up__input--email {
+    border: 1px solid #d1d1d1;
+    padding-left: 80px;
+    position: relative;
+}
+
+.input--email {
+    position: relative;
+}
+
+.input--email:after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 63px;
+    background-image: url(../img/icons/email.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/************/
+
+/*FOOTER*/
+
+
+.footer__logo {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-filter: grayscale(1) opacity(0.44);
+    filter: grayscale(1) opacity(0.44);
+}
+
+.footer__logo:hover {
+    -webkit-filter: grayscale(0) opacity(1);
+    filter: grayscale(0) opacity(1);
+}
+
+.logo__text--footer {
+    font-size: 1.5rem;
+    line-height: 1.3em;
+}
+
+.logo__img--footer {
+    font-size: 1.5rem;
+}
+
+.footer {
+    background-color: #f9f9f9;
+    border-top: 1px solid #d1d1d1;
+}
+
+.content-container--footer {
+    padding: 50px 110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.footer__contacts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.contact {
+    margin: 15px;
+}
+
+.fa-twitter {
+    color: #4cbcf6;
+}
+
+.fa-facebook-f {
+    color: #4a6daa;
+}
+
+.fa-google-plus-g {
+    color: #e74c40;
+}
+
+.client__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.section--benefits {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/*********/

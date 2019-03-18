@@ -1,0 +1,195 @@
+@media only screen and (max-width: 1281px) {
+    .content-container--main {
+        padding-left: 50px;
+    }
+
+    .about__description {
+        padding: 235px 25px 250px 20px;
+        width: 60%;
+        position: relative;
+    }
+
+    .about__img {
+        width: 40%;
+        right: -15%;
+    }
+
+    .content-container--benefits {
+        padding-left: 50px;
+    }
+
+    .benefit {
+        margin-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .content-container {
+        padding-left: 20px;
+    }
+
+    .content-container--benefits {
+        padding-left: 0px;
+    }
+
+
+    .about__description {
+        width: 75%;
+        padding: 235px 25px 250px 50px;
+    }
+
+    .about__img {
+        width: 25%;
+        right: -30%;
+    }
+
+    .benefit {
+        margin-right: 0px;
+    }
+
+    .review__text {
+        width: 100%;
+    }
+
+    .review {
+        padding: 0 50px;
+        max-width: 600px;
+    }
+
+    .content-container--email {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .content-container--footer {
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .menu-button {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .top-menu__nav {
+        display: none;
+    }
+
+    .about__description {
+        width: 100%;
+        padding: 235px 25px 250px 50px;
+    }
+
+    .about__img {
+        display: none;
+    }
+
+    .card-container {
+        display: none;
+    }
+
+    .benefits__description {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .review {
+        padding: 0 10px;
+    }
+
+    .benefit {
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+        margin-right: 0;
+        min-width: 300px;
+    }
+
+    .content-container--reviews {
+        padding-left: 0;
+        padding-top: 0px;
+        padding-bottom: 60px;
+    }
+}
+
+@media only screen and (max-width: 641px) {
+    html {
+        font-size: 14px;
+    }
+
+    .menu-button {
+        right: 20px;
+
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .about__description {
+        width: 100%;
+        padding: 135px 50px 150px 50px;
+    }
+
+    .email__header {
+        line-height: 1.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .content-container {
+        padding-left: 0px;
+    }
+
+    .benefit {
+        -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+    }
+
+    .content-container--email {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .input {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .sign-up__input {
+        margin-right: 0px;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    .about__description {
+        padding: 85px 20px 100px 20px;
+    }
+
+    .about__header {
+        font-size: 2.5rem;
+        line-height: 1.4em;
+        margin-bottom: 0.5em;
+    }
+
+    .about__description:before {
+        content: none;
+    }
+
+    .about__description:after {
+        content: none;
+    }
+}

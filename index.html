@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Tankapp</title>
+    <meta content="" name="description" />
+    <meta content="" property="og:image" />
+    <meta content="" property="og:description" />
+    <meta content="" property="og:site_name" />
+    <meta content="website" property="og:type" />
+
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="x-rim-auto-match" content="none">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+</head>
+
+
+<body>
+
+    <div class="menu-button" onclick="classToggle()">
+        <div class="menu-line menu-line--top"></div>
+        <div class="menu-line menu-line--middle"></div>
+        <div class="menu-line menu-line--bottom"></div>
+    </div>
+    <div id="fullscreen-menu" class="fullscreen-menu fullscreen-menu--closed">
+        <nav class="fullscreen-menu__nav">
+            <div class="fullscreen-menu__item" onclick="fullscreenNav('#benefits')">Our Benefits</div>
+            <div class="fullscreen-menu__item" onclick="fullscreenNav('#reviews')">Reviews</div>
+            <div class="fullscreen-menu__item" onclick="fullscreenNav('#contacts')">Contact us</div>
+        </nav>
+        <div class="fullscreen-menu__close" onclick="classToggle()">
+            ╳
+        </div>
+    </div>
+    <section class="section section--top-menu">
+        <div class="wrapper">
+            <div class="content-container">
+                <div class="top-menu">
+                    <a href="#">
+                        <div class="logo top-menu__logo">
+                            <div class="logo__img">
+                                <i class="fas fa-tint fa-2x"></i>
+                            </div>
+                            <p class="logo__text">
+                                TANK<span class="logo__span">APP</span>
+                            </p>
+                        </div>
+                    </a>
+                    <nav class="nav top-menu__nav">
+                        <a href="#benefits">
+                            <div class="nav__item">
+                                our benefits
+                            </div>
+                        </a>
+                        <a href="#reviews">
+                            <div class="nav__item">
+                                reviews
+                            </div>
+                        </a>
+                        <a href="#contacts">
+                            <div class="nav__item">
+                                contact us
+                            </div>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="main" class="section section--main">
+        <div class="wrapper">
+            <div class="content-container content-container--main">
+                <div class="about">
+                    <div class="about__description">
+                        <header>
+                            <h1 class="header about__header">
+                                Track your next fuel shops
+                            </h1>
+                        </header>
+                        <h2 class="about__text">
+                            Monitor and alert on all petrol bunks near to you
+                        </h2>
+                        <a class="sign-up" href="#">
+                            Sign up for <span class="sign-up__bg">free</span>
+                        </a>
+                        <div class="input">
+                            <input class="sign-up__input" type="text" placeholder="Your E-mail Adress">
+                            <button class="button button--sign-up">
+                                Signup
+                            </button>
+                        </div>
+                    </div>
+                    <div class="about__img">
+                        <img class="max-height" src="./img/about__img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--clients">
+        <div class="wrapper">
+            <div class="content-container content-container--clients">
+                <div class="marquee3k" data-speed="0.5">
+                    <div class="clients">
+                        <div class="client">
+                            <img class="client__img" src="./img/evernote.png" alt="">
+                        </div>
+                        <div class="client">
+                            <img class="client__img" src="./img/microsoft.png" alt="">
+                        </div>
+                        <div class="client">
+                            <img class="client__img" src="./img/google.png" alt="">
+                        </div>
+                        <div class="client">
+                            <img class="client__img" src="./img/sony.png" alt="">
+                        </div>
+                        <div class="client">
+                            <img class="client__img" src="./img/firefox.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="section section--benefits">
+        <div class="wrapper">
+            <div class="content-container content-container--benefits">
+                <header>
+                    <h1 class="header">
+                        our benefits
+                    </h1>
+                </header>
+                <div class="benefits">
+                    <div class="benefits__description">
+                        <div class="benefit">
+                            <figure class="benefit__name">
+                                <img class="benefit__icon" src="./img/icons/reliable.png" alt="">
+                                <figcaption class="benefit__header">
+                                    Reliable and Secure Platform
+                                </figcaption>
+                            </figure>
+                            <p class="benefit__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dicta iusto odit vero alias reiciendis officia accusamus numquam accusantium, sunt impedit nesciunt, omnis amet.
+                            </p>
+                        </div>
+                        <div class="benefit">
+                            <figure class="benefit__name">
+                                <img class="benefit__icon" src="./img/icons/orgainized.png" alt="">
+                                <figcaption class="benefit__header">
+                                    Everything is perfectly orgainized
+                                </figcaption>
+                            </figure>
+                            <p class="benefit__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dicta iusto odit vero alias reiciendis officia accusamus numquam accusantium, sunt impedit nesciunt, omnis amet.
+                            </p>
+                        </div>
+                        <div class="benefit">
+                            <figure class="benefit__name">
+                                <img class="benefit__icon" src="./img/icons/support.png" alt="">
+                                <figcaption class="benefit__header">
+                                    Rapid customer support
+                                </figcaption>
+                            </figure>
+                            <p class="benefit__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dicta iusto odit vero alias reiciendis officia accusamus numquam accusantium, sunt impedit nesciunt, omnis amet.
+                            </p>
+                        </div>
+                        <div class="benefit">
+                            <figure class="benefit__name">
+                                <img class="benefit__icon" src="./img/icons/features.png" alt="">
+                                <figcaption class="benefit__header">
+                                    Tons of features and easy to use
+                                </figcaption>
+                            </figure>
+                            <p class="benefit__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dicta iusto odit vero alias reiciendis officia accusamus numquam accusantium, sunt impedit nesciunt, omnis amet.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7185.95011611461!2d30.456034899399867!3d50.44823372869661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1552313473852" width="820" height="513" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="section section--reviews">
+        <div class="wrapper">
+            <div class="content-container content-container--reviews">
+                <header>
+                    <h1 class="header">
+                        Reviews
+                    </h1>
+
+                </header>
+                <div class="reviews">
+                    <div class="slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="review">
+                                        <figure class="review__name">
+                                            <img class="review__icon" src="./img/icons/clouds.png" alt="">
+                                            <figcaption class="review__header">
+                                                Works on any device anyware
+                                            </figcaption>
+                                        </figure>
+                                        <p class="review__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis deleniti, hic sit labore? Iure blanditiis incidunt quas, minus magni, porro, labore hic eum natus provident doloremque? Quia dolor qui laudantium temporibus, doloremque similique id repellat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, iusto.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review">
+                                        <figure class="review__name">
+                                            <img class="review__icon" src="./img/icons/clouds.png" alt="">
+                                            <figcaption class="review__header">
+                                                Works on any device anyware
+                                            </figcaption>
+                                        </figure>
+                                        <p class="review__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis deleniti, hic sit labore? Iure blanditiis incidunt quas, minus magni, porro, labore hic eum natus provident doloremque? Quia dolor qui laudantium temporibus, doloremque similique id repellat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, iusto.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review">
+                                        <figure class="review__name">
+                                            <img class="review__icon" src="./img/icons/clouds.png" alt="">
+                                            <figcaption class="review__header">
+                                                Works on any device anyware
+                                            </figcaption>
+                                        </figure>
+                                        <p class="review__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis deleniti, hic sit labore? Iure blanditiis incidunt quas, minus magni, porro, labore hic eum natus provident doloremque? Quia dolor qui laudantium temporibus, doloremque similique id repellat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, iusto.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review">
+                                        <figure class="review__name">
+                                            <img class="review__icon" src="./img/icons/clouds.png" alt="">
+                                            <figcaption class="review__header">
+                                                Works on any device anyware
+                                            </figcaption>
+                                        </figure>
+                                        <p class="review__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis deleniti, hic sit labore? Iure blanditiis incidunt quas, minus magni, porro, labore hic eum natus provident doloremque? Quia dolor qui laudantium temporibus, doloremque similique id repellat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, iusto.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="section section--email">
+        <div class="wrapper">
+            <div class="content-container content-container--email">
+                <div class="email">
+                    <header>
+                        <h1 class="header email__header">
+                            Save time & gain agility
+                        </h1>
+                    </header>
+                    <h2 class="email__text">
+                        Using our cloud Monitoring Services So you can Focous on Runing Yours Better
+                    </h2>
+                    <div class="input input--email">
+                        <input class="sign-up__input sign-up__input--email" type="text" placeholder="Enter Your E-mail Adress">
+                        <button class="button button--sign-up">
+                            Signup
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section section--footer footer">
+        <div class="wrapper">
+            <div class="content-container content-container--footer">
+                <a href="#main">
+                    <div class="logo footer__logo">
+                        <div class="logo__img logo__img--footer">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <p class="logo__text logo__text--footer">
+                            TANK<span class="logo__span">APP</span>
+                        </p>
+                    </div>
+                </a>
+                <div class="contacts footer__contacts">
+                    <div class="contact">
+                        <a href="https://twitter.com/">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="contact">
+                        <a href="https://facebook.com/">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                    <div class="contact">
+                        <a href="https://www.google.com/">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="./js/swiper.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'horizontal',
+            loop: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                renderBullet: function(index, className) {
+                    return '<span class="' + className + '">' + (index + 1) + '</span>';
+                },
+            },
+            mousewheel: {
+                invert: false,
+            },
+            slidesPerView: "auto",
+            centeredSlides: true,
+            autoplay: {
+                delay: 2000,
+            },
+        });
+    </script>
+    <script src="js/marquee3k.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
